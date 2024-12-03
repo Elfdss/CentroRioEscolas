@@ -1,0 +1,268 @@
+/* Cabeçalho (barra de navegação) */
+.navbar {
+  background-color: #02443d;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+/* Título da navbar (à esquerda) */
+
+.navbarLogo {
+  display: flex;
+  align-items: center; /* Alinha a logo verticalmente com o restante do conteúdo */
+  margin-right: 10px; /* Espaçamento da logo para o título */
+}
+
+.logo {
+  height: 70px; /* Ajuste o tamanho da logo */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Botões da navbar (à direita) */
+.navbarButtons {
+  display: flex;
+  align-items: center;
+}
+
+.navButton {
+  background-color: white;
+  color: #211d1f;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navButton:hover {
+  background-color: #211d1f;
+  color: white;
+}
+
+.banner {
+  background-image: url('./assets/Banner.jpg'); /* Caminho para sua imagem */
+  background-size: cover; /* Faz com que a imagem cubra toda a área do banner */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center; /* Centraliza a imagem no div */
+  height: 300px; /* Altura do banner */
+  width: 100%; /* Ocupa toda a largura */
+  margin: 0;
+}
+
+/* Estilizando o corpo da aplicação */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #02443d;
+}
+
+/* Estilo do container de projetos */
+.container {
+  width: 50%; /* Defina a largura do container, por exemplo, 80% da tela */
+  margin: 0 auto; /* Centraliza o container na tela */
+  padding: 20px; /* Adiciona um espaçamento interno */
+  background-color: #f4f4f4; /* Cor de fundo opcional */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+
+ul {
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o padding padrão da lista */
+}
+
+li {
+  background-color: #fff; /* Cor de fundo dos itens */
+  margin-bottom: 15px; /* Espaço entre os itens */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.5); /* Cor do título */
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.closeButton {
+  margin-left: 10px;
+  background-color: #ffde59;
+}
+
+.closeButton:hover {
+  background-color: #ffde59;
+}
+
+/* Campo de pesquisa */
+.searchContainer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Seções */
+.project-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Botões padrão */
+button {
+  background-color: #02443d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #02443d;
+}
+
+/* Container da Lista de Escolas */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+/* Estilo para a lista de escolas */
+.schoolItem {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schoolItem:hover {
+  background-color: #f0f0f0;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.projectList {
+  flex: 2;
+}
+
+.detailsContainer {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.detailsContainer h2 {
+  margin-bottom: 20px;
+}
+
+.detailsContainer button {
+  background-color: #ffde59;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detailsContainer button:hover {
+  background-color: #ffde59;
+}
+
+.footer {
+  background-color: #eed46a; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 10px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  font-size: 14px; /* Tamanho do texto */
+  position: relative; /* Posição padrão */
+  bottom: 0;
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column; /* Alinha o conteúdo verticalmente */
+  align-items: center;
+  gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os links */
+}
+
+.socialLinks a {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold;
+}
+
+.socialLinks a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
